@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="0.3" type="content">
+	<name>
+		<en>Produk Hukum</en>
+		<es>Produk Hukum</es>
+	</name>
+	<description>
+		<en>Show visitors what products you sell and allows images and price information to be added.</en>
+		<es>Enséñale a tus visitantes que productos tu vendes y permíte agregarle información gráfica y de precios.</es>
+	</description>
+	<is_frontend>1</is_frontend>
+	<is_backend>1</is_backend>
+	<is_backend_sidebar>1</is_backend_sidebar>
+	<controllers>
+		<controller name="admin">
+			<method>index</method>
+			<method>create</method>
+			<method>edit</method>
+			<method>delete</method>
+		</controller>
+	</controllers>
+	<navigation>
+		<admin>
+			<new_item href="admin/produkhukum/create">
+				<en>Tambah Data</en>
+			</new_item>
+			<search href="admin/produkhukum/index/search/">
+				<en>Search</en>
+			</search> 
+		</admin>
+	</navigation>
+</module>

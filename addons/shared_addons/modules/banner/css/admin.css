@@ -1,0 +1,33 @@
+div.filter {
+	height: 34px;
+	padding: 0 10px;
+	border-bottom: 1px solid #C2C2C2;
+}
+div.filter form h6 {
+	float: left;
+	margin: 4px 5px 0 0;
+	font-weight: lighter;
+	font-style: italic;
+}
+div.filter form {
+	width: 100%;
+}
+div.filter form ul {
+	list-style-type: none;
+	margin-bottom: 0;
+}
+div.filter form div.button {
+	margin-top: 2px;
+}
+div.filter form li {
+	float: left;
+	margin: 4px 0 0 0;
+}
+/* this is the cancel button for the filter form */
+div.filter a.cancel {
+	padding: 1px 6px;
+	text-decoration: none;
+	vertical-align: middle;
+	margin-left: 8px;
+	display: inline-block;
+}

@@ -1,0 +1,20 @@
+div#gallery-page {
+	width: 920px;
+	background-color: #fff;
+	margin: 0 auto;
+	text-align: left;
+}
+div#gallery-container {
+   border: none;
+}
+div#ads {
+	clear: both;
+	padding: 12px 0 12px 66px;
+}
+div#footer {
+	clear: both;
+	color: #777;
+	margin: 0 auto;
+	padding: 20px 0 40px;
+	text-align: center;
+}

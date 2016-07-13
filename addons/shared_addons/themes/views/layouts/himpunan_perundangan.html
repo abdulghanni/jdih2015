@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{ theme:partial name="metadata" }}
+</head>
+<body id="top">
+
+	<!-- Begin pageWrapper -->
+	<div id="pageWrapper">
+		{{ integration:analytics }}
+
+		{{ theme:partial name="header" }}
+
+		<!-- Begin nav -->
+		<nav>
+			<div id="navwrapper">
+			<div class="navleft"></div>
+			<ul id="head-nav">
+				<li class="home"><a href="{{url:site}}">{{ theme:image file="home.png" }}</a></li>
+				{{ navigation:links group="header" }}
+			</ul>
+			<div class="navright"></div>
+			</div>
+		</nav>
+		<!-- End nav -->
+
+		<!-- Begin contentWrapper -->
+		<div id="contentWrapper">
+
+			{{ theme:partial name="content_himpunan_perundangan" }}
+
+		</div>
+		<!-- End contentWrapper -->
+
+	{{ theme:partial name="footer" }}
+
+	</div>
+	<!-- End pageWrapper -->
+
+</body>
+</html>

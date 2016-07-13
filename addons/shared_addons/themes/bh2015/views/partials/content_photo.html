@@ -1,0 +1,22 @@
+<!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Galeri Foto Kegiatan</h1>
+				</div>
+			</div>
+		</div>
+
+<div id="home-top">
+	{{ widgets:area slug="default-top" }}
+</div>
+ <!-- Page Content -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+			{{ theme:partial name="breadcrumbs" }}
+			{{ session:messages success="success-box" notice="notice-box" error="error-box" }}
+			{{ template:body }}
+        </div>
+    </div>
+</div>

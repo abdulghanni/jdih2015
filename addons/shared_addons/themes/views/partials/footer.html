@@ -1,0 +1,56 @@
+<!-- Begin footer -->
+<div id="footerWrapper">
+<footer>
+	<div id="footer-menu">
+		<div class="biro-hukum">
+			<h3>Biro Hukum</h3>
+			<ul>
+				<li><a href="{{url:site}}profil/visi-misi">Visi Misi</a></li>
+				<li><a href="{{url:site}}profil/struktur-organisasi">Struktur Organisasi</a></li>
+				<li><a href="{{url:site}}profil/tupoksi">Tugas Pokok & Fungsi</a></li>
+				<li><a href="{{url:site}}profil/rencana-strategis">Rencana Strategis</a></li>
+			</ul>
+		</div>
+		<div class="produk-hukum">
+			<h3>Himpunan Peraturan</h3>
+			<ul>
+				<li><a href="{{url:site}}himpunan_perundangan">Himpunan Perundangan</a></li>
+				<li><a href="{{url:site}}produkhukum">Produk Hukum</a></li>
+			</ul>
+			<h3>Direktori Hukum</h3>
+			<ul>
+				<li><a href="{{url:site}}direktori-hukum/tata-cara-penyusunan-peraturan-daerah">Tata Cara Penyusunan Peraturan Daerah</a></li>
+				<li><a href="{{url:site}}direktori-hukum/penyusunan-instruksi-peraturan-gubernur">Penyusunan Instruksi Peraturan Gubernur</a></li>
+			</ul>
+		</div>
+		<div class="menu-footer-lainnya">
+			<ul>
+				<li><a href="{{url:site}}blog">Berita</a></li>
+				<li><a href="{{url:site}}informasi">Informasi</a></li>
+				<li><a href="{{url:site}}gallery">Galeri Foto</a></li>
+				<li><a href="{{url:site}}contact">Kontak Kami</a></li>
+			</ul>
+		</div>
+	</div>
+	<ul id="foot-nav">
+		<li>{{ theme:image file="logo-kecil.png" }}</li>
+		<li>&copy;{{ helper:date format="Y" }} {{ settings:site_name }}. {{ helper:lang line="all_right_reserved" }}</li>
+		<li><a class="last" href="{{ url:current }}#top" title="{{ helper:lang line="back_to_top" }}">{{ helper:lang line="top_page" }} &uarr;</a></li>
+	</ul>
+</footer>
+</div>
+<!-- End footer -->
+<!-- Begin scripts -->
+{{ theme:js file="localscroll.js" }}
+{{ theme:js file="scrollto.js" }}
+{{ theme:js file="easing.js" }}
+{{ if theme:options:cufon_enabled == 'yes' }}
+	{{ theme:js file="cufon.js" }}
+	{{ theme:js file=settings:theme_default:cufon_font }}
+{{ endif }}
+{{ theme:js file="global.js" }}
+<!-- End scripts -->
+
+{{ if theme:options:cufon_enabled == 'yes' }}
+	<script type="text/javascript">Cufon.now();</script>
+{{ endif }}

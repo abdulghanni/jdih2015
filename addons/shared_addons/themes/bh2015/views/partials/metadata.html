@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{{ settings:site_name }}&nbsp;&bull;&nbsp;{{ template:title }}</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<script type="text/javascript">
+	var BASE_URL = '<?php echo base_url(); ?>';
+	var THEME_PATH = BASE_URL + 'addons/shared_addons/themes/bh2015/';
+</script>
+
+{{ theme:favicon file="favicon.ico" sizes="16x16 32x32" }}
+
+{{ asset:css file="bootstrap.min.css" }}
+{{ asset:css file="icomoon-social.css" }}
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+{{ asset:css file="leaflet.css" }}
+
+<!--[if lte IE 8]>
+    {{ asset:css file="leaflet.ie.css" }}
+<![endif]-->
+
+{{ asset:css file="main.css" }}
+
+{{ theme:js file="jquery.min.js" }} 
+{{ theme:js file="bootstrap.min.js" }}
+{{ asset:js file="modernizr-2.6.2-respond-1.1.0.min.js" }}
+        
+<base href="{{ url:base }}" />
+
+<!-- Use Html5Shiv in order to allow IE render HTML5 -->
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+{{ asset:render }}
+
+{{ template:metadata }}

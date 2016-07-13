@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+    	{{ theme:partial name="metadata" }}
+    </head>
+    <body>
+        {{ theme:partial name="header" }}
+
+        {{ widgets:area slug="home-top" }}
+
+		<!-- Press Coverage -->
+        <div class="section">
+	    	<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						{{ widgets:area slug="home-middle-left" }}
+					</div>
+					<div class="col-md-4 col-sm-6">
+						{{ widgets:area slug="home-middle-center" }}
+					</div>
+					<div class="col-md-4 col-sm-6">
+						{{ widgets:area slug="home-middle-right" }}
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Press Coverage -->
+		
+   		<!-- Banner -->
+		<div class="bannerbottom">
+			<div class="row">
+	   			<div class="col-md-8">
+	   				{{ widgets:area slug="banner-bottom-left" }}
+	   			</div>
+	   			<div class="col-md-4 col-sm-6">
+	   				{{ widgets:area slug="banner-bottom-right" }}
+	   			</div>
+	   		</div>
+  		</div>
+  		<!-- Banner -->
+	    
+	    {{ theme:partial name="footer" }}
+
+    </body>
+</html>

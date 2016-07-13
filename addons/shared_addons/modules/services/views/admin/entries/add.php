@@ -1,0 +1,46 @@
+<?= form_open_multipart($this->uri->uri_string()); ?>
+<? $BASEURL = BASE_URL.'admin/produkhukum'; ?>
+<div class="fieldset fieldsetBlock active tabs">
+  <div class="header">
+    <? if($this->uri->segment(3,'create') == 'create'): ?>
+		<h3>
+		  <?=lang('produkhukum_create_title');?>
+		</h3>
+    <? endif; ?>
+  </div>
+	<div class="tabs">
+	<fieldset id="fieldset1">
+    <table border="0" cellspacing="0" cellpadding="2">
+      <tr>
+        <td>Kategori:</td>
+        <td>
+        	  <select name="FK_category_id" id="FK_category_id">
+				<?php foreach($categories as $category): ?>
+				<?php $selected = ($category->category_id == $entry->FK_category_id) ? 'selected="selected"' : '' ?>
+				<option value="<?=$category->category_id?>" <?=$selected?> ><?=$category->name?></option>
+				<?php endforeach ?>
+			</select>
+        </td>
+      </tr>
+      <tr>
+        <td>Nomor:</td>
+        <td><input type="text" name="title" value="<?=($entry->title) ? $entry->title : ''?>" id="title" /></td>
+      </tr>
+      <tr>
+        <td>Tahun:</td>
+        <td><input type="text" name="regyear" value="<?=($entry->regyear) ? $entry->regyear : ''?>" id="regyear" /></td>
+      </tr>
+      <tr>
+        <td>File Download:</td>
+        <td><input type="file" name="url" id="url" /></td>
+      </tr>
+      <tr>
+        <td>Tentang:</td>
+        <td><textarea name="description" id="description" rows="8" cols="40"><?=($entry->description) ? $entry->description : ''?></textarea></td>
+      </tr>
+    </table>
+    <div><? $this->load->view('admin/fragments/table_buttons', array('buttons' => array('save', 'cancel') )); ?></div>
+	</fieldset>
+    
+</div>
+<?=form_close()?>
